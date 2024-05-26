@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    img{
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+        width: 150px;
+        height: 150px;
+    }
+    div{
+        background-color: red;
+
+    }
+</style>
+<body>
+    <div class="jumbotron text-center background-color: lightblue">
+        <h1>My Expense Manager 2024-2025</h1>
+        <img src="tea.jpg" alt="">
+        <img src="coffee.jpg" alt="">
+        <img src="juice.cms" alt="">
+   
+      </div>
+        <center>
+            <form action="expense.php" method="post">
+            <label for="cars">Choose a type :</label>
+            <select name="type" id="cars" class="form-control">
+                <option value="tea">tea</option>
+                <option value="coffee">coffee</option>
+                <option value="juice">juice</option>
+            </select>
+
+            <label for="cars" >add quantity: </label>
+            <input type="number" name="qty" class="form-control" id="">
+            <br>
+
+            <label for="cars">Note: </label>
+            <input type="text" name="note" class="form-control" id="">
+
+            <label for="cars">date</label>
+            <input type="date" name="date" class="form-control" id="">
+            <br>
+
+            <input type="submit" name="add expenses"  class="btn btn-primary " id="">
+        </form>
+
+        </center>
+</body>
+</html>
